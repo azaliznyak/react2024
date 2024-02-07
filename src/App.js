@@ -1,9 +1,10 @@
 import React from 'react';
+
+import {useEffect} from 'react'
 import {Users} from './components/Users'
 
 const App = () => {
-   useState
-
+    useEffect()
     return (
         <div>
             <Users/>
