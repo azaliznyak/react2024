@@ -1,14 +1,15 @@
 import React from 'react';
 
-const User = ({user}) => {
+const User = ({user, getCurrentUser}) => {
     const {id, name}=user
     return (
         <div>
             <div>id:{id}</div>
             <div>name:{name}</div>
+            <button onClick={()=>getCurrentUser(user)}>Details</button>
 
         </div>
     );
 };
 
-export {User};
+export {User}
