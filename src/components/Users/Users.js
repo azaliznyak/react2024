@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 import {useState, useEffect} from 'react'
 
+
+
 const Users = () => {
 
     const [users, setUsers]=useState([])
@@ -14,7 +16,6 @@ const Users = () => {
 
 
 
-    fetch('https://jsonplaceholder.typicode.com/users').then(value => value.json()).then(value => setUsers(value))
 
     return (
         <div>
