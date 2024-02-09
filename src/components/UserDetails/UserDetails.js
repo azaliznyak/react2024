@@ -7,6 +7,7 @@ const UserDetails = ({userDetails}) => {
             <div>{id}- {name}</div>
             <div>{username}</div>
             <div>{email}</div>
+
             
         </div>
     );
