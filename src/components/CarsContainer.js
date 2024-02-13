@@ -16,7 +16,7 @@ const CarsContainer = () => {
         <div>
             <CarForm setTrigger={setTrigger} setCarForUpdate={setCarForUpdate} carForUpdate={carForUpdate}/>
             <hr/>
-            <Cars cars={cars} setCarForUpdate={setCarForUpdate}/>
+            <Cars cars={cars} setCarForUpdate={setCarForUpdate} setTrigger={setTrigger}/>
 
         </div>
     );
