@@ -1,0 +1,22 @@
+.Header{
+display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    background-color: lavenderblush;
+}
+
+.Header a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.Header a:hover{
+    color: deeppink;
+}
+
+.Header a[class='active']{
+    color: deeppink;
+}
