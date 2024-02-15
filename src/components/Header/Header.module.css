@@ -10,5 +10,10 @@ display: flex;
 text-decoration: none;
     color: aliceblue;
     font-size: x-large;
+    font-weight: bold;
 
+}
+
+.Header a:hover{
+    color: deeppink;
 }
