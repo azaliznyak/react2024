@@ -6,10 +6,12 @@ import {Link, NavLink} from "react-router-dom";
 const Header = () => {
     return (
         <div className={css.Header}>
-          <Link to={'/users'}>Users</Link>
-            <Link to={'/posts'}>Posts</Link>
-            
-        </div>
+            <NavLink to={'/users'}>Users</NavLink>
+            <NavLink to={'/comments'}>Comments</NavLink>
+
+            {/*<a href="/users">Users</a>*/}
+            {/*<a href="/posts">Posts</a>*/}
+      </div>
     );
 };
 
