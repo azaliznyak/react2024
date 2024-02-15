@@ -1,11 +1,12 @@
 import React from 'react';
 
-const UserPage = () => {
+const UsersPage = () => {
     return (
         <div>
+            UserPage
             
         </div>
     );
 };
 
-export {UserPage};
+export {UsersPage};
