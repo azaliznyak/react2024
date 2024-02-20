@@ -1,4 +1,5 @@
 import React from 'react';
+import {Comments} from "../CommentsContainer/Comments";
 
 const PostDetails = ({postDetails}) => {
     const{userId, id ,title,body}=postDetails
@@ -8,6 +9,9 @@ const PostDetails = ({postDetails}) => {
             <div>id:{id}</div>
             <div>title:{title}</div>
             <div>body:{body}</div>
+            <hr/>
+            <Comments postId={id}/>
+
 
         </div>
     );

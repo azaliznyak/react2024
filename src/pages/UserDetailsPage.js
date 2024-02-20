@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Outlet, useParams} from "react-router-dom";
+
 import {userService} from "../services/userService";
 import {UserDetails} from "../components/UsersContainer/UserDetails";
 
@@ -14,6 +15,7 @@ const UserDetailsPage = () => {
             {userDetails &&<UserDetails userDetails={userDetails}/>}
             <hr/>
             <Outlet/>
+
 
 
         </div>

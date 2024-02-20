@@ -7,26 +7,28 @@ import {PostDetailsPage} from "./pages/postDetailsPage";
 
 const router=createBrowserRouter([
     {
-        path:'', element:<MainLayout/>, children:[
+        path: '', element: <MainLayout/>, children: [
             {
-                index:true, element:<Navigate to={'users'}/>
+                index: true, element: <Navigate to={'users'}/>
             },
             {
-                path:'users', element:<UsersPage/>, children:[
+                path: 'users', element: <UsersPage/>
+            },
+            {
+                path: 'users/:id', element: <UserDetailsPage/>, children: [
                     {
-                        path:':id', element:<UserDetailsPage/>, children:[
-                            {
-                                path:':posts', element:<PostsPage/>, children:[
-                                    {
-                                        path:'postDetails', element:<PostDetailsPage/>
-                                    }
-                                ]
-                            }
-                        ]
+                        path: 'posts', element: <PostsPage/>
                     }
                 ]
+            },
+            {
+                path: 'posts/:id', element: <PostDetailsPage/>
             }
+
+
         ]
+
+
     }
 ])
 

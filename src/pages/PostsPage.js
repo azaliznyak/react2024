@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Outlet, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 import {Post} from "../components/UsersContainer/Post";
 import {postService} from "../services/postService";
@@ -14,7 +14,7 @@ const PostsPage = () => {
         <div>
             {post &&<Post post={post}/>}
             <hr/>
-            <Outlet/>
+
 
 
         </div>
