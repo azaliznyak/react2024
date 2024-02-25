@@ -1,1 +1,2 @@
-export * from './contextProvider'
+export * from './ContextProvider'
+export * from './AuthRequired'
