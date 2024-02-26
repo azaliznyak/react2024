@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import css from './Episode.module.css'
-import {Navigate, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 const Episode = ({episode}) => {
     const {id,name, episode:chapter, characters}=episode;
@@ -8,8 +8,9 @@ const Episode = ({episode}) => {
 
 
     const toCharacters = () => {
+        const ids=characters.map(character=>character.split('/').slice(-1)[0]).join(',')
 
-     navigate(`/characters/${id}`)
+     navigate(`/characters/${ids}`)
     }
     return (
         <table className={css.Episode} onClick={toCharacters}>

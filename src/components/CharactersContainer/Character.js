@@ -7,6 +7,7 @@ const Character = ({character}) => {
             <div>Id:{id}</div>
             <div>Name: {name}</div>
             <img src={image} alt={name}/>
+            <hr/>
 
         </div>
     );
