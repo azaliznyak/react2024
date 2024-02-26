@@ -1,0 +1,4 @@
+.EpisodesTable{
+    display: flex;
+    flex-wrap: wrap;
+}

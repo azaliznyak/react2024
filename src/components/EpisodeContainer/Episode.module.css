@@ -1,0 +1,27 @@
+.Episode {
+    width: 500px; /* Задайте ширину таблиці */
+    border-collapse: collapse; /* Забезпечте об'єднання меж */
+    margin: 0 10px;
+}
+
+.Episode td{
+    display: block;
+    justify-content: center;
+    margin: 10px;
+}
+.Episode tr {
+    margin: 10px;
+   padding: 5px; /* Задайте відступи в комірках */
+    border: 1px solid #ddd; /* Задайте межі комірок */
+    text-align: center;
+}
+
+
+.Episode tr:hover {
+    background-color: #ddd; /* Колір фону рядка при наведенні миші */
+}
+
+
+
+
+

@@ -1,3 +1,12 @@
 .Header{
-
+justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+        font-family: "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: bold;
 }
+
