@@ -1,0 +1,29 @@
+/*.MoviesList{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-between;*/
+/*    padding: 35px 50px;*/
+
+/*    flex-basis: 20%; !* Ширина ряду, можна налаштувати за вашим вибором *!*/
+/*}*/
+
+/* MoviesList.module.css */
+
+.MoviesList {
+    width: 100%; /* Ширина контейнера */
+    display: flex;
+    justify-content: center; /* Центрування рядів */
+}
+
+.MovieRow {
+    display: flex;
+    flex-wrap: wrap; /* Рядки замість стовпців */
+    justify-content: space-around; /* Рівномірний розподіл елементів */
+    margin: 0 auto; /* Центрування рядів */
+    max-width: 1200px; /* Максимальна ширина рядів */
+}
+
+
+
+
+
