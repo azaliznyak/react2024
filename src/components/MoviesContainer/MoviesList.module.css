@@ -23,7 +23,39 @@
     max-width: 1200px; /* Максимальна ширина рядів */
 }
 
+.MoviesButton{
+    display: flex;
+justify-content: center;
+    margin: 30px;
+    padding: 10px;
+}
+.MoviesButton div{
+    padding: 10px;
+}
 
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
 
+.MoviesButton button{
+    background-color:cornflowerblue;
+    width: 40px;
+    border-radius: 20px;
+    border: 1px solid beige;
+    font-weight: bold;
+    color: black;
+
+}
+
+.MoviesButton button:hover{
+    transition: background-color 0.3s ease;
+    animation: zoom 0.5s forwards;
+    cursor: pointer;
+}
 
 
