@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Header.module.css'
+import {NavLink} from "react-router-dom";
 
 
 
@@ -11,7 +12,7 @@ const Header = ({toggleTheme, theme}) => {
             <div className={css.MovieIcon}>
                 <h2 >MoviePulse</h2>
                 <div className={css.icon}></div>
-                {/*<div className={css.icon2}></div>*/}
+                <NavLink to={'/genres'}>Genres</NavLink>
 
 
             </div>
