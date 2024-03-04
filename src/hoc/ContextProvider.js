@@ -1,12 +1,15 @@
-import React, {createContext, useEffect, useState} from 'react';
-import {movieService} from "../services";
+import React, {createContext, useState} from 'react';
+
 
 const Context=createContext(null)
 const ContextProvider = ({children}) => {
-    const [voteAverage, setVoteAverage] = useState(null)
+    const [trigger, setTrigger] = useState(null);
+    const changeTrigger =()=> {
+        setTrigger(prevState=>!prevState)
+    }
 
     return (
-        <Context.Provider value={{voteAverage, setVoteAverage}}>
+        <Context.Provider value={{trigger,changeTrigger}} >
 
             {children}
 

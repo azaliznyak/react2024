@@ -1,27 +1,28 @@
-import React, {createContext, useEffect, useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import {movieService} from "../../services";
 import {MovieListCard} from "./MovieListCard";
 import css from './MoviesList.module.css'
-import {useAppContext, usePageQuery} from "../../hooks";
-import {ContextProvider} from "../../hoc";
+import { usePageQuery} from "../../hooks";
 
 
 
 
-const MoviesList = ({children}) => {
+
+const MoviesList = ({}) => {
     const [movies, setMovies] = useState({results: [], total_pages: 0});
 
+
     const {page, nextPage, prevPage} = usePageQuery();
-    const {setVoteAverage}=useAppContext()
+    // const {setVoteAverage}=useAppContext()
 
     console.log(movies)
     useEffect(() => {
         movieService.getAll(page).then(({data}) => {
             setMovies(data);
-            setVoteAverage(data.results.map(movie=>movie.vote_average))
+            // setVoteAverage(data.results.map(movie=>movie.vote_average))
             }
         )
-    }, [page,setVoteAverage])
+    }, [page])
 
 
     return (
@@ -30,7 +31,7 @@ const MoviesList = ({children}) => {
         <div >
             <div className={css.MoviesList}>
                 <div className={css.MovieRow}>
-                    {movies.results.map(movie => <MovieListCard key={movie.id} movie={movie} vote_average={movie.vote_average}/>)}
+                    {movies.results.map(movie => <MovieListCard key={movie.id} movie={movie} vote_average={movie.vote_average} genre_ids={movie.genre_ids}/>)}
 
                 </div>
 

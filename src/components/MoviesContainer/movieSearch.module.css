@@ -1,0 +1,67 @@
+
+/*.MoviesList {*/
+/*    width: 100%; !* Ширина контейнера *!*/
+/*    display: flex;*/
+/*   justify-content: center;*/
+/*   */
+/*}*/
+
+/*.MovieRow {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap; !* Рядки замість стовпців *!*/
+/*    justify-content: space-around; !* Рівномірний розподіл елементів *!*/
+/*    margin: 0 auto; !* Центрування рядів *!*/
+/*    max-width: 1200px; !* Максимальна ширина рядів *!*/
+
+
+/*}*/
+
+.MoviesList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*padding-left: 53px;*/
+}
+
+.MovieRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрує елементи в ряду */
+    max-width: 1200px;
+
+}
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.MovieImg:hover{
+    transition: background-color 0.3s ease;
+    animation: zoom 0.5s forwards;
+    cursor: pointer;
+}
+
+.Movie {
+    margin: 20px;
+    position: relative;
+    flex-basis: 20%; /* 5 фільмів в ряду - кожен елемент займає 20% ширини */
+    max-width: 200px; /* Ширина кожного фільму */
+}
+
+.MovieImg {
+    width: 100%; /* Займати всю доступну ширину в контейнері */
+    height: auto; /* Автоматична висота для підтримки співвідношення сторін */
+    border-radius: 5px;
+}
+
+.MovieTitle {
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center; /* Центрує текст заголовку */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+

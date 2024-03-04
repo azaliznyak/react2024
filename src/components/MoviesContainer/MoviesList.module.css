@@ -58,4 +58,31 @@ justify-content: center;
     cursor: pointer;
 }
 
+.MovieResultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Рівномірний розподіл елементів по контейнеру */
+}
 
+.SearchPage{
+    height: 1700px
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.input{
+    background-color: lightskyblue;
+    border-radius: 5px;
+    border: 1px solid beige;
+}
+
+.button{
+    background-color: #618ec8;
+    border-radius: 5px;
+    border: 1px solid beige;
+    font-weight: bold;
+}

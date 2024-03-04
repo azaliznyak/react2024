@@ -1,14 +1,22 @@
 import React from 'react';
 import css from './Movie.module.css'
 import {StarsRating} from "../StarsRating";
-import StarRatings from "react-star-ratings";
+
 import {useNavigate} from "react-router-dom";
 
-const MovieListCard = ({movie, vote_average}) => {
+const MovieListCard = ({movie, vote_average, genre_ids}) => {
     const {id, title, poster_path}=movie
     const baseImageUrl = 'https://image.tmdb.org/t/p/w500';
     const navigate=useNavigate()
-    console.log(title);
+    // console.log(title);
+    //
+    // useEffect(()=>{
+    //     for (let genreId of genre_ids) {
+    //         if (genreId===53){
+    //             console.log(movie.title)
+    //         }
+    //     }
+    // },[])
 
 
     return (

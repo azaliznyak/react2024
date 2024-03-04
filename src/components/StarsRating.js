@@ -1,9 +1,6 @@
 import React from 'react';
 import StarRatings from 'react-star-ratings'
 
-import {useAppContext} from "../hooks";
-import {ContextProvider} from "../hoc";
-
 
 
 const StarsRating = ({movie,vote_average}) => {

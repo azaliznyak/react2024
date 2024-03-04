@@ -4,7 +4,6 @@ import {MoviesList} from "../components";
 const MoviesPage = () => {
     return (
         <div>
-            MoviePage
             <MoviesList/>
 
         </div>

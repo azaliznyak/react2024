@@ -64,6 +64,8 @@
     background-color: #ccc;
     border-radius: 13px;
     cursor: pointer;
+    border: 1px solid beige;
+
 }
 
 .toggle::after {
@@ -76,6 +78,7 @@
     background-color: #fff;
     border-radius: 50%;
     transition: transform 0.3s ease;
+
 }
 
 .toggle.light::after {
@@ -87,4 +90,35 @@
 }
 
 
+.Links{
+    display: flex;
+    justify-content: center;
+}
+.Nav1{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: lavenderblush;
+    margin-right: 40px;
+
+}
+
+.Nav2{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: lavenderblush;
+
+
+}
+
+.Home{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    color: #cccccc;
+}
 
