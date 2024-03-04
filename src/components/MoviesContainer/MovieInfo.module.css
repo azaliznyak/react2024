@@ -31,7 +31,7 @@
 padding-top: 50px;
 padding-right: 250px;
     margin: 10px;
-    flex-wrap: wrap; /* Рядки замість стовпців */
+    flex-wrap: wrap;
     color: #282c34;
 
 }

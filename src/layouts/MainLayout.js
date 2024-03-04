@@ -13,7 +13,7 @@ const MainLayout = () => {
     return (
         <div className={css[theme]} >
             <Header toggleTheme={toggleTheme} theme={theme} />
-            <div className={css.Outlet}>
+            <div >
             <Outlet/>
 
             </div>

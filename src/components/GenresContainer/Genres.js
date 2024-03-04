@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {genreService, movieService} from "../../services";
+import {genreService} from "../../services";
 import {Genre} from "./Genre";
 
 

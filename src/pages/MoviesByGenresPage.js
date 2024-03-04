@@ -9,20 +9,14 @@ import {usePageQuery} from "../hooks";
 
 
 const MoviesByGenresPage = () => {
-    // const [withGenre, setWithGenre]=useState({results:[]})
-    // const { id } = useParams();
+
 
     const [totalPages, setTotalPages] = useState(0);
     const [movies, setMovies] = useState([]);
     const { id } = useParams();
     const { page, nextPage, prevPage } = usePageQuery();
 
-    // useEffect(() => {
-    //     movieService.getByGenre(id)
-    //         .then((data) => setMovies(data.results))
-    //         .catch((error) => console.error('Error fetching movies by genre:', error));
-    // }, [id, page]);
-    //
+
     useEffect(() => {
         const fetchData = async () => {
             const moviesData = await movieService.getByGenre(id, page);

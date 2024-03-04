@@ -8,7 +8,7 @@ import { usePageQuery} from "../../hooks";
 
 
 
-const MoviesList = ({}) => {
+const MoviesList = () => {
     const [movies, setMovies] = useState({results: [], total_pages: 0});
 
 

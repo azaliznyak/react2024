@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 
 import StarRatings from "react-star-ratings";
 import css from './MovieInfo.module.css'
@@ -7,7 +7,7 @@ import css from './MovieInfo.module.css'
 const MovieInfo = ({info}) => {
     const {id,title, poster_path, overview, backdrop_path, release_date,vote_average}=info;
 
-const [byGenres, setByGenres]=useState([])
+
 
 
     const baseImageUrl = 'https://image.tmdb.org/t/p/w500';
