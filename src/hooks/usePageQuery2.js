@@ -32,14 +32,7 @@ const usePageQuery2 = () => {
         page,
         nextPage,
         prevPage
-        // nextPage:()=>setQuery(prev => {
-        //     prev.set('page', (+prev.get('page')+1).toString());
-        //     return prev
-        // }),
-        // prevPage:()=>setQuery(prev => {
-        //     prev.set('page', (+prev.get('page')-1).toString());
-        //     return prev
-        // })
+
     };
 };
 export { usePageQuery2 };
